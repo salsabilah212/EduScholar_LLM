@@ -1,10 +1,10 @@
 # 🎓 EduScholar
 
-> **AI-powered research assistant for educational research.**
+> **AI-powered Research Assistant for Educational Research**
 
-EduScholar is a Retrieval-Augmented Generation (RAG) application that helps students, lecturers, and researchers explore educational theories and research methodologies from a trusted research repository.
+EduScholar is a Retrieval-Augmented Generation (RAG) application that helps students, lecturers, and researchers explore educational theories and research methodologies through natural language interaction.
 
-Instead of relying solely on the Large Language Model (LLM), EduScholar retrieves the most relevant documents from its knowledge base before generating answers, ensuring responses are grounded, transparent, and supported by references.
+Unlike a conventional chatbot, EduScholar retrieves relevant information from an educational research repository before generating responses, ensuring that every answer is grounded in reliable sources rather than relying solely on the Large Language Model (LLM).
 
 ---
 
@@ -13,18 +13,36 @@ Instead of relying solely on the Large Language Model (LLM), EduScholar retrieve
 - Explain educational theories
 - Answer research methodology questions
 - Maximum Marginal Relevance (MMR) retrieval
-- Display source document previews
+- Display supporting source documents
 - Show author and publication year
-- Modern chat interface built with Streamlit
+- Interactive chat interface using Streamlit
 
 ---
 
-## Preview
+# System Architecture
 
-
-
-### Answer Generation
-
+```
+                    User
+                      │
+                      ▼
+             Streamlit Interface
+                      │
+                      ▼
+               RetrievalQA Chain
+                      │
+      ┌───────────────┴───────────────┐
+      ▼                               ▼
+ FAISS Retriever                System Prompt
+      │                               │
+      ▼                               │
+Educational Repository                │
+      └───────────────┬───────────────┘
+                      ▼
+             Llama 3.3 (Groq API)
+                      │
+                      ▼
+ Repository-based Answer + Sources
+```
 
 ---
 
@@ -42,124 +60,114 @@ The system processes every question through eight stages:
 | 6 | LLM | Send retrieved context to Llama 3.3 through Groq API. |
 | 7 | Prompting | Combine retrieved documents with a custom academic system prompt. |
 | 8 | Answer Generation | Generate repository-based answers together with supporting source documents. |
----
-
-## RAG Workflow
-
-EduScholar follows the Retrieval-Augmented Generation (RAG) workflow below.
-
-```
-                         User Question
-                               │
-                               ▼
-                    Streamlit User Interface
-                               │
-                               ▼
-                   Load Research Repository
-                               │
-                               ▼
-                  Metadata Extraction
-           (Title • Author • Publication Year)
-                               │
-                               ▼
-            Recursive Character Text Splitter
-          Chunk Size = 800 | Overlap = 100
-                               │
-                               ▼
-          HuggingFace Embedding Model
-(paraphrase-multilingual-MiniLM-L12-v2)
-                               │
-                               ▼
-                 FAISS Vector Store
-                               │
-                               ▼
-        MMR Retriever (Top-k Relevant Chunks)
-      fetch_k = 8 | lambda = 0.7
-                               │
-                               ▼
-          System Prompt + Retrieved Context
-                               │
-                               ▼
-          Llama 3.3 70B (Groq API)
-                               │
-                               ▼
-      Repository-based Answer + Sources
-```
 
 ---
 
-# Technology Stack
+## Technology Stack
 
 | Component | Technology |
 |------------|------------|
 | Programming Language | Python |
 | User Interface | Streamlit |
 | Framework | LangChain |
-| LLM | Llama 3.3 70B (Groq) |
+| Large Language Model | Llama 3.3 (Groq API) |
 | Embedding Model | paraphrase-multilingual-MiniLM-L12-v2 |
 | Vector Database | FAISS |
 | Retrieval Strategy | Maximum Marginal Relevance (MMR) |
-| Prompting | PromptTemplate |
-| Chain | RetrievalQA |
+| Prompt Engineering | PromptTemplate |
+| QA Chain | RetrievalQA |
 
 ---
 
-# Knowledge Base
-
-Current repository includes educational topics such as:
-
-- Constructivism
-- Cognitivism
-- Behaviorism
-- Learning Motivation
-- Character Education
-- Quantitative Research
-- Qualitative Research
-- Classroom Action Research
-- Educational Assessment
-- Educational Technology
-
----
-
-# Example Questions
-
-Examples of questions that EduScholar can answer:
-
-- What is constructivism?
-- Explain behaviorism and cognitivism.
-- What is the difference between quantitative and qualitative research?
-- How do I conduct Classroom Action Research?
-- Explain multimedia learning principles.
-- What are motivation theories in education?
-
----
-
-# Project Structure
+## Project Structure
 
 ```
-EduScholar
+EduScholar/
 │
 ├── app.py
 ├── rag_pipeline.py
 ├── system_prompt.txt
 ├── requirements.txt
 ├── README.md
+├── .env
 │
-├── data
+├── data/
 │   └── paper_literature.txt
 │
-└── .env
+└── images/
+    ├── home.png
+    ├── answer.png
+    └── sources.png
 ```
 
 ---
 
+# Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/EduScholar.git
+
+cd EduScholar
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Create an environment file
+
+Create a `.env` file in the project root.
+
+```text
+GROQ_API_KEY=your_groq_api_key
+```
+
+---
+
+# Run the Application
+
+Run the Streamlit application.
+
+```bash
+streamlit run app.py
+```
+
+After the application starts, open your browser and visit:
+
+```
+http://localhost:8501
+```
+
+---
+
+# Example Questions
+
+You can ask questions such as:
+
+- What is constructivism?
+- Explain the theory of behaviorism.
+- What is the difference between quantitative and qualitative research?
+- How do I conduct Classroom Action Research?
+- What are the principles of multimedia learning?
+- Explain motivation theories in education.
+
+---
+
 # Future Improvements
+
 - PDF document ingestion
+- Citation generation (APA Style)
+- Literature review synthesis
 - Semantic search
-- Research gap identification
 - Multi-document comparison
 - Research recommendation
+- Research gap identification
 - Cross-encoder reranker
+- Conversation memory
 
 ---
 
@@ -169,6 +177,6 @@ EduScholar
 
 ---
 
-## License
+# 📄 License
 
-MIT License
+This project is released under the MIT License.
