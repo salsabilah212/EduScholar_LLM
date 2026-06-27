@@ -1,191 +1,174 @@
-# 🎓 EduScholarAI
+# 🎓 EduScholar
 
-AI assistant for education researchers and academics — search and summarization of theories from research repositories. Built with RAG (Retrieval-Augmented Generation) and LangChain.
+> **AI-powered research assistant for educational research.**
 
----
+EduScholar is a Retrieval-Augmented Generation (RAG) application that helps students, lecturers, and researchers explore educational theories and research methodologies from a trusted research repository.
 
-## 📋 About
-
-EduScholarAI is an AI assistant that answers education research questions based on provided documents, not internal model knowledge. It helps students, lecturers, and researchers find and summarize educational theories quickly and accurately with clear references.
-
-**Key Features:**
-- Search educational theories from research catalog
-- Summarize concepts and research methodologies
-- Provide answers with traceable sources
-- Assist with literature review
+Instead of relying solely on the Large Language Model (LLM), EduScholar retrieves the most relevant documents from its knowledge base before generating answers, ensuring responses are grounded, transparent, and supported by references.
 
 ---
 
-## ⚙️ System Architecture
+## Features
+
+- Explain educational theories
+- Answer research methodology questions
+- Maximum Marginal Relevance (MMR) retrieval
+- Display source document previews
+- Show author and publication year
+- Modern chat interface built with Streamlit
+
+---
+
+## Preview
+
+
+
+### Answer Generation
+
+
+---
+
+# RAG Pipeline
+
+The system processes every question through eight stages:
+
+| Step | Process | Description |
+|------|----------|-------------|
+| 1 | Document Loading | Load educational documents and extract metadata (title, author, publication year). |
+| 2 | Text Chunking | Split documents into smaller chunks using Recursive Character Text Splitter. |
+| 3 | Embedding | Convert every chunk into dense vector representations using HuggingFace MiniLM. |
+| 4 | Vector Store | Store embeddings inside a FAISS vector database. |
+| 5 | Retrieval | Retrieve relevant chunks using Maximum Marginal Relevance (MMR) to reduce redundant information. |
+| 6 | LLM | Send retrieved context to Llama 3.3 through Groq API. |
+| 7 | Prompting | Combine retrieved documents with a custom academic system prompt. |
+| 8 | Answer Generation | Generate repository-based answers together with supporting source documents. |
+---
+
+## RAG Workflow
+
+EduScholar follows the Retrieval-Augmented Generation (RAG) workflow below.
 
 ```
-Research Catalog (TXT)
-       ↓
-  Document Loader
-       ↓
-  Text Splitter
-       ↓
-HuggingFace Embeddings
-       ↓
-  FAISS Vector Store
-       ↓
-    Retriever
-       ↓
- LLM (Gemini/Groq/OpenAI)
-       ↓
-  Answer + Sources
+                         User Question
+                               │
+                               ▼
+                    Streamlit User Interface
+                               │
+                               ▼
+                   Load Research Repository
+                               │
+                               ▼
+                  Metadata Extraction
+           (Title • Author • Publication Year)
+                               │
+                               ▼
+            Recursive Character Text Splitter
+          Chunk Size = 800 | Overlap = 100
+                               │
+                               ▼
+          HuggingFace Embedding Model
+(paraphrase-multilingual-MiniLM-L12-v2)
+                               │
+                               ▼
+                 FAISS Vector Store
+                               │
+                               ▼
+        MMR Retriever (Top-k Relevant Chunks)
+      fetch_k = 8 | lambda = 0.7
+                               │
+                               ▼
+          System Prompt + Retrieved Context
+                               │
+                               ▼
+          Llama 3.3 70B (Groq API)
+                               │
+                               ▼
+      Repository-based Answer + Sources
 ```
 
 ---
 
-## 🛠️ Tech Stack
+# Technology Stack
 
 | Component | Technology |
-|-----------|------------|
-| LLM | Gemini API / Groq (Llama 3.3) / OpenAI |
-| RAG Framework | LangChain |
-| Embeddings | HuggingFace (paraphrase-multilingual-MiniLM-L12-v2) |
-| Vector Store | FAISS (local, no server) |
-| UI | Streamlit |
-| Language | Python 3.10+ |
+|------------|------------|
+| Programming Language | Python |
+| User Interface | Streamlit |
+| Framework | LangChain |
+| LLM | Llama 3.3 70B (Groq) |
+| Embedding Model | paraphrase-multilingual-MiniLM-L12-v2 |
+| Vector Database | FAISS |
+| Retrieval Strategy | Maximum Marginal Relevance (MMR) |
+| Prompting | PromptTemplate |
+| Chain | RetrievalQA |
 
 ---
 
-## 📚 Topics in Research Catalog
+# Knowledge Base
 
-1. Constructivism Theory
-2. Cognitivism Theory
-3. Behaviorism Theory
-4. Quantitative Research
-5. Qualitative Research
-6. Classroom Action Research
-7. Character Education
-8. Learning Motivation Theory
-9. Learning Assessment
-10. Educational Technology
+Current repository includes educational topics such as:
 
----
-
-## 🚀 Setup & Run
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/username/eduscholar-rag.git
-cd eduscholar-rag
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Create .env File
-
-Copy `.env.example` and rename to `.env`:
-
-```bash
-cp .env.example .env
-```
-
-Add your API key (choose one):
-
-```
-GEMINI_API_KEY=AIzaSyxxxxxxxxxxxxxxxx
-# or
-GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxx
-# or
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
-```
-
-**Get API Key:**
-
-| Provider | Steps |
-|----------|-------|
-| **Gemini** | https://ai.google.dev → Sign up → Create API Key |
-| **Groq** | https://console.groq.com → Register → Create API Key |
-| **OpenAI** | https://platform.openai.com → Sign up → Create API Key |
-
-### 4. Run Application
-
-```bash
-streamlit run app.py
-```
-
-Open browser: http://localhost:8501
+- Constructivism
+- Cognitivism
+- Behaviorism
+- Learning Motivation
+- Character Education
+- Quantitative Research
+- Qualitative Research
+- Classroom Action Research
+- Educational Assessment
+- Educational Technology
 
 ---
 
-## 📁 Project Structure
+# Example Questions
+
+Examples of questions that EduScholar can answer:
+
+- What is constructivism?
+- Explain behaviorism and cognitivism.
+- What is the difference between quantitative and qualitative research?
+- How do I conduct Classroom Action Research?
+- Explain multimedia learning principles.
+- What are motivation theories in education?
+
+---
+
+# Project Structure
 
 ```
-eduscholar-rag/
-├── app.py                      # Streamlit interface
-├── rag_pipeline.py             # RAG logic with LangChain
-├── requirements.txt            # Dependencies
-├── .env.example                # API key template
-├── .env                        # API key (DO NOT COMMIT)
-├── .gitignore
+EduScholar
+│
+├── app.py
+├── rag_pipeline.py
+├── system_prompt.txt
+├── requirements.txt
 ├── README.md
-└── data/
-    └── eduresearchcatalog.txt  # Knowledge base
+│
+├── data
+│   └── paper_literature.txt
+│
+└── .env
 ```
 
 ---
 
-## ❓ Example Questions
-
-- "What is the difference between quantitative and qualitative research?"
-- "How to apply constructivism in the classroom?"
-- "What are the theories of motivation in education?"
-- "How to conduct Classroom Action Research?"
-- "What is the difference between formative and summative assessment?"
-
----
-
-## ☁️ Deployment to Streamlit Cloud
-
-1. Push project to GitHub (make sure `.env` is not committed)
-
-2. Go to https://share.streamlit.io
-
-3. Connect your GitHub repository
-
-4. Add Secrets in Streamlit dashboard:
-   - Settings → Secrets
-   - Add your API key:
-
-   ```
-   GEMINI_API_KEY = "AIzaSyxxxxxxxxxxxxxxxx"
-   ```
-   or
-   ```
-   GROQ_API_KEY = "gsk_xxxxxxxxxxxxxxxxxxxx"
-   ```
-   or
-   ```
-   OPENAI_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxx"
-   ```
-
-5. Click Deploy
-
-> **Note:** `.env` is not used on Streamlit Cloud. API keys are read from Secrets.
+# Future Improvements
+- PDF document ingestion
+- Semantic search
+- Research gap identification
+- Multi-document comparison
+- Research recommendation
+- Cross-encoder reranker
 
 ---
 
-## 📝 Notes
+# Author
 
-- Research catalog contains 17 topics on educational theory and methodology
-- Answers are based only on catalog documents, not general AI knowledge
-- Sources are displayed for transparency and validation
+**Salsabilah**
 
 ---
 
-## 📄 License
+## License
 
 MIT License
-
-## 👨‍💻 Contributor
-
-Salsabilah
