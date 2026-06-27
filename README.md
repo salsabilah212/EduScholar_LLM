@@ -1,6 +1,6 @@
 # 🎓 EduScholarAI
 
-AI assistant for education researchers and academics — search and summarization of theories from research catalog. Built with RAG (Retrieval-Augmented Generation) and LangChain.
+AI assistant for education researchers and academics — search and summarization of theories from research repositories. Built with RAG (Retrieval-Augmented Generation) and LangChain.
 
 ---
 
@@ -188,4 +188,4 @@ MIT License
 
 ## 👨‍💻 Contributor
 
-[Your Name]
+Salsabilah
