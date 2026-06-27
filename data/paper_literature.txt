@@ -1,7 +1,7 @@
 ================================================================================
 ACADEMIC RESEARCH COMPANION DATASET - EDUCATION FIELD
 ================================================================================
-Total: 17 documents | Estimated: 24 pages (A4 equivalent, 400 words/page)
+Total: 17 documents | Estimated: 24 pages
 ================================================================================
 
 ================================================================================
@@ -23,7 +23,6 @@ Document 17: Comparison of Quantitative and Qualitative Methodology
 TITLE: Constructivism Theory - Foundation of Modern Learning
 AUTHORS: Jean Piaget, Lev Vygotsky, Ernst von Glasersfeld
 YEAR: 1970-2020
-KEYWORDS: constructivism, active learning, ZPD, scaffolding
 
 1.1 INTRODUCTION
 
@@ -90,7 +89,6 @@ However, meta-analysis research shows that constructivist approaches improve con
 TITLE: Cognitivism Theory - Understanding Thinking Processes in Learning
 AUTHORS: Jerome Bruner, Robert Gagné, Benjamin Bloom
 YEAR: 1956-2000
-KEYWORDS: cognitivism, information processing, Bloom's taxonomy, schema
 
 2.1 INTRODUCTION
 
@@ -147,7 +145,6 @@ Teachers need to consider students' working memory capacity and design learning 
 TITLE: Behaviorism Theory and Its Applications in Education
 AUTHORS: Ivan Pavlov, B.F. Skinner, John B. Watson
 YEAR: 1900-1970
-KEYWORDS: behaviorism, classical conditioning, operant conditioning, reinforcement
 
 3.1 INTRODUCTION
 
@@ -202,7 +199,6 @@ Criticism of behaviorism: too mechanistic, ignores social and emotional aspects,
 TITLE: Quantitative Educational Research - Design, Methods, and Analysis
 AUTHORS: John W. Creswell, J.C. Nunnally
 YEAR: 2014-2022
-KEYWORDS: quantitative, experimental, statistics, validity, reliability
 
 4.1 DEFINITION AND CHARACTERISTICS
 
@@ -287,7 +283,6 @@ Disadvantages: ignores context, data limited to instruments, does not capture de
 TITLE: Qualitative Research - Understanding Meaning in Educational Context
 AUTHORS: Sharan Merriam, Robert Stake, Michael Patton
 YEAR: 2009-2022
-KEYWORDS: qualitative, phenomenology, ethnography, case study, grounded theory
 
 5.1 DEFINITION AND CHARACTERISTICS
 
@@ -302,85 +297,36 @@ Characteristics of qualitative research:
 
 5.2 QUALITATIVE APPROACHES/PARADIGMS
 
-A. Phenomenology
-Focuses on the lived experience of individuals. Aims to understand the essence of common experience.
-- Data sources: in-depth interviews, experience descriptions
-- Analysis: epoche (bias bracketing), horizontalization, thematic clustering
-- Example: "How was the experience of students in online learning during the pandemic?"
+A. Phenomenology: Focuses on the lived experience of individuals. Aims to understand the essence of common experience.
 
-B. Ethnography
-Focuses on culture and practices within communities. Researcher engages directly in the setting.
-- Data sources: participant observation, interviews, artifacts
-- Analysis: thick description, pattern identification
-- Example: "Learning culture in modern Islamic boarding schools"
+B. Ethnography: Focuses on culture and practices within communities. Researcher engages directly in the setting.
 
-C. Case Study
-Intensive investigation of a single case (individual, group, program) in a real-world context.
-- Multiple case study: several cases for comparison
-- Intrinsic case study: unique case of interest
-- Instrumental case study: case to understand broader issues
+C. Case Study: Intensive investigation of a single case (individual, group, program) in a real-world context.
 
-D. Grounded Theory
-Developing theory from data (bottom-up), not testing existing theories.
-- Process: data collection and analysis occur simultaneously
-- Constant comparative method: comparing data
-- Theoretical sampling: selecting participants based on emerging concepts
+D. Grounded Theory: Developing theory from data (bottom-up), not testing existing theories.
 
-E. Narrative
-Examining personal stories and experiences in narrative form.
-- Restorying: retelling experiences
-- Chronological ordering: time sequence
+E. Narrative: Examining personal stories and experiences in narrative form.
 
 5.3 DATA COLLECTION TECHNIQUES
 
-1. In-depth Interviews
-   - Unstructured: open-ended, flexible
-   - Semi-structured: general guide with probing
-   - Structured: fixed questions (more quantitative)
-
-2. Participant Observation
-   - Complete observer: not involved
-   - Participant-as-observer: fully involved
-   - Observer-as-participant: primarily as researcher
-
-3. Document Analysis
-   - Personal documents (diaries, letters)
-   - Official documents (policies, curriculum)
-   - Artifacts (photos, videos, student work)
-
-4. Focus Group Discussion
-   - 6-10 participants with similar experiences
-   - Group interaction produces rich data
+1. In-depth Interviews: unstructured, semi-structured, or structured
+2. Participant Observation: observing and participating in the setting
+3. Document Analysis: analyzing personal and official documents
+4. Focus Group Discussion: 6-10 participants with similar experiences
 
 5.4 TRUSTWORTHINESS
 
-Credibility (internal validity):
-- Triangulation (methods, sources, researchers)
-- Member checking: verification with participants
-- Peer debriefing: discussion with colleagues
-- Prolonged engagement: sufficient time in the field
-
-Transferability (external validity):
-- Thick description: detailed context description
-- Appropriate purposive sampling
-
-Dependability (reliability):
-- Audit trail: process documentation
-- Reflexivity journal: researcher reflection notes
-
-Confirmability (objectivity):
-- Confirmability audit: examining data-interpretation relationships
-- Reflexivity: acknowledging researcher bias
+Credibility (internal validity): Triangulation, member checking, peer debriefing, prolonged engagement
+Transferability (external validity): Thick description, appropriate purposive sampling
+Dependability (reliability): Audit trail, reflexivity journal
+Confirmability (objectivity): Confirmability audit, reflexivity
 
 5.5 QUALITATIVE DATA ANALYSIS
 
 Analysis steps:
 1. Data preparation: transcription, data organization
 2. Reading and memoing: reading and writing reflection notes
-3. Coding: labeling data segments
-   - Open coding: identifying initial concepts
-   - Axial coding: connecting categories
-   - Selective coding: integrating into main themes
+3. Coding: labeling data segments (open, axial, selective coding)
 4. Theming: identifying patterns and themes
 5. Interpretation: explaining meaning
 
@@ -389,13 +335,12 @@ Supporting software: NVivo, ATLAS.ti, MaxQDA
 5.6 ADVANTAGES AND DISADVANTAGES
 
 Advantages: rich and deep data, flexible, preserves context
-Disadvantages: limited generalization (transferability), subjective, time and cost intensive
+Disadvantages: limited generalization, subjective, time and cost intensive
 
 --- DOCUMENT 6 ---
 TITLE: Classroom Action Research - Teacher as Researcher
 AUTHORS: Stephen Kemmis, Robin McTaggart, John Elliot
 YEAR: 1988-2020
-KEYWORDS: CAR, action research, practice improvement, reflective cycle
 
 6.1 DEFINITION AND CHARACTERISTICS
 
@@ -408,247 +353,96 @@ Characteristics of CAR:
 - Participatory: teacher as primary researcher
 - Cyclical: conducted in repeating cycles
 
-Differences between CAR and formal research:
-- Purpose: practice improvement (not generalization)
-- Subjects: students in the researcher's class
-- Design: flexible, evolving
-- Time: often short (cycles)
-
 6.2 CAR MODELS
 
-A. Kemmis & McTaggart Model (1988)
-Spiral (repeating) model with 4 steps:
-1. Plan: problem identification, analysis, action design
-2. Act: implementing the plan
-3. Observe: data collection during/after the action
-4. Reflect: analysis, evaluation, and planning for the next cycle
+A. Kemmis & McTaggart Model (1988): Spiral model with 4 steps: Plan, Act, Observe, Reflect
 
-B. John Elliot Model (1991)
-Modification of Kemmis with more detailed steps:
-- Initial idea identification
-- Fact-finding (initial data)
-- General planning
-- Implementation and monitoring
-- Evaluation
+B. John Elliot Model (1991): Modification with more detailed steps
 
-C. Kurt Lewin Model
-Action research cycle: Planning → Action → Fact-finding
+C. Kurt Lewin Model: Planning -> Action -> Fact-finding
 
-D. McNiff & Whitehead Model (2000)
-Emphasizes "living theory" - teachers develop their own practice theory through reflection and action.
+D. McNiff & Whitehead Model (2000): Emphasizes "living theory"
 
 6.3 CAR STEPS
 
-1. Problem Identification
-   - Initial observation, teaching reflection
-   - Identifying learning problems (e.g., passive students, low achievement)
+1. Problem Identification: initial observation, identifying learning problems
+2. Analysis and Diagnosis: analyzing causes, literature review
+3. Action Planning: determining strategies, preparing instruments, setting indicators
+4. Action Implementation: applying strategies, collecting data
+5. Observation and Monitoring: observing process, recording findings
+6. Reflection: analyzing data, assessing success, identifying improvements
 
-2. Analysis and Diagnosis
-   - Analyzing problem causes
-   - Literature review on potential solutions
+6.4 INSTRUMENTS AND DATA COLLECTION
 
-3. Action Planning
-   - Determining strategies/methods
-   - Preparing data collection instruments
-   - Setting success indicators
-
-4. Action Implementation
-   - Applying strategies in the classroom
-   - Collecting data during implementation
-
-5. Observation and Monitoring
-   - Observing the learning process
-   - Recording findings (field notes)
-
-6. Reflection
-   - Analyzing data
-   - Assessing success (against indicators)
-   - Identifying weaknesses and improvements
-   - Deciding whether to continue to the next cycle
-
-6.4 INSTRUMENTS AND DATA COLLECTION TECHNIQUES
-
-Quantitative Data:
-- Achievement tests (pre/post)
-- Questionnaires/surveys
-- Attitude scales
-
-Qualitative Data:
-- Observation (observation sheets, field notes)
-- Interviews (with students, collaborators)
-- Document analysis (teacher notes, student work)
-- Teacher reflective journal
+Quantitative Data: Achievement tests, questionnaires, attitude scales
+Qualitative Data: Observation sheets, interviews, document analysis, reflective journal
 
 6.5 SUCCESS CRITERIA
 
-Success indicators must be SMART:
-- Specific: specific and clear
-- Measurable: measurable
-- Achievable: achievable
-- Relevant: relevant to the problem
-- Time-bound: has a deadline
-
-Criteria typically consist of:
-1. Student performance (score ≥ minimum passing grade, 75% of students pass)
-2. Learning process (active participation, collaboration)
-3. Student behavior (discipline, motivation)
+Success indicators must be SMART: Specific, Measurable, Achievable, Relevant, Time-bound
 
 6.6 ETHICS IN CAR
 
-Although conducted by teachers, CAR still considers ethics:
-- Informed consent from students/parents
-- Identity confidentiality
-- Not harming students
-- Reporting results honestly (including failures)
+Informed consent, identity confidentiality, not harming students, reporting honestly
 
 6.7 CAR EXAMPLE
 
-Title: Improving Students' Critical Thinking Skills Through Problem-Based Learning Model in Science
+Title: Improving Students' Critical Thinking Skills Through Problem-Based Learning in Science
 
-Cycle I:
-- Plan: applying PBL to ecosystem material
-- Action: 2 PBL sessions with groups
-- Observation: average critical thinking score 65 (out of 100)
-- Reflection: need scaffolding in problem identification phase
-
-Cycle II:
-- Plan: improving scaffolding and time allocation
-- Action: PBL with clearer scaffolding
-- Observation: average score 78
-- Reflection: improved, but group work needs improvement
-
-Cycle III:
-- Plan: clearer group structure
-- Action: PBL + role assignment
-- Observation: average score 85 (≥75 target achieved)
+Cycle I: Plan -> Act -> Observe (score 65) -> Reflect (need scaffolding)
+Cycle II: Plan -> Act -> Observe (score 78) -> Reflect (improved, group work needs improvement)
+Cycle III: Plan -> Act -> Observe (score 85) -> Reflect (target achieved)
 
 --- DOCUMENT 7 ---
 TITLE: Character Education - Theory, Practice, and Policy
 AUTHORS: Thomas Lickona, Marvin Berkowitz, Indonesian Ministry of Education
 YEAR: 1991-2022
-KEYWORDS: character, morals, values, ethics, PPK
 
 7.1 INTRODUCTION
 
 Character education is a conscious and systematic effort to help students understand, care about, and act according to basic moral values. Character education is becoming increasingly important amid moral decadence, bullying, and identity crises among youth.
 
-In Indonesia, character education became a national priority through the Character Strengthening Education Movement (PPK) which began in 2016. PPK integrates character values into the curriculum and school activities.
+In Indonesia, character education became a national priority through the Character Strengthening Education Movement (PPK) which began in 2016.
 
 7.2 COMPONENTS OF CHARACTER EDUCATION (THOMAS LICKONA)
 
 Thomas Lickona (1991) identified three interrelated moral components:
 
-1. Moral Knowing
-   - Moral awareness: awareness of moral issues
-   - Knowing moral values: understanding good/bad values
-   - Perspective-taking: able to see from others' viewpoints
-   - Moral reasoning: ability to reason morally
-   - Decision-making: moral decision making
+1. Moral Knowing: moral awareness, knowing moral values, perspective-taking, moral reasoning, decision-making
 
-2. Moral Feeling
-   - Conscience: moral conscience
-   - Self-esteem: self-worth
-   - Empathy: empathy toward others
-   - Loving the good: loving goodness
-   - Self-control: self-control
+2. Moral Feeling: conscience, self-esteem, empathy, loving the good, self-control
 
-3. Moral Action
-   - Competence: ability to act
-   - Will: willingness to act
-   - Habit: habit of doing good
+3. Moral Action: competence, will, habit
 
 Comprehensive character education must develop all three components in balance.
-
-7.2 COMPONENTS OF CHARACTER EDUCATION (THOMAS LICKONA)
-
-Thomas Lickona (1991) identified three interrelated moral components:
-
-1. Moral Knowing (Knowledge of Morality)
-   - Moral awareness: awareness of moral issues
-   - Knowing moral values: understanding good and bad values
-   - Perspective-taking: ability to see from another's point of view
-   - Moral reasoning: ability to reason morally
-   - Decision-making: moral decision-making
-
-2. Moral Feeling (Moral Sentiment)
-   - Conscience: conscience
-   - Self-esteem: self-esteem
-   - Empathy: empathy for others
-   - Loving the good: loving goodness
-   - Self-control: self-control
-
-3. Moral Action (Moral Action)
-   - Competence: ability to act
-   - Will: willingness to act
-   - Habit: habit of doing good
-
-Comprehensive character education must develop these three components in a balanced manner.
 
 7.3 CHARACTER PILLARS (INDONESIAN MINISTRY OF EDUCATION)
 
 The Ministry of Education and Culture identifies 5 main character values:
-
-1. Religious
-   - Accepting the teachings of one's religion
-   - Practicing worship according to teachings
-   - Tolerance among religious communities
-
-2. Nationalist
-   - Love for homeland and nation
-   - Appreciating cultural diversity
-   - Prioritizing unity and integrity
-
-3. Independent
-   - Not dependent on others
-   - Responsible for own choices
-   - Able to solve problems
-
-4. Mutual Cooperation
-   - Collaboration in groups
-   - Caring for others
-   - Sharing and helping others
-
-5. Integrity
-   - Honesty and consistency
-   - Keeping promises
-   - Responsible for actions
+1. Religious: accepting teachings, practicing worship, tolerance
+2. Nationalist: love for homeland, appreciating diversity, prioritizing unity
+3. Independent: not dependent on others, responsible, able to solve problems
+4. Mutual Cooperation: collaboration, caring, sharing
+5. Integrity: honesty, keeping promises, responsible for actions
 
 7.4 IMPLEMENTATION STRATEGIES IN SCHOOLS
 
-Strategies at the school level:
-1. School Culture
-   - Building a positive and safe atmosphere
-   - Teacher and staff role modeling
-   - Positive traditions and rituals (ceremonies, group prayers)
-
-2. Curriculum Integration
-   - In subjects (thematic)
-   - Special subjects (character culture)
-   - Projects for strengthening Pancasila student profile (in Merdeka curriculum)
-
-3. Regular Habits
-   - Morning handshakes
-   - Congregational prayers
-   - Clean Friday/charity Friday
-
-4. Extracurricular Activities
-   - Scouts, Red Cross, Student Council
-   - Social activities, community service
-
-5. Collaboration with Parents
-   - School and parents aligned
-   - Regular communication about character development
+1. School Culture: positive atmosphere, role modeling, positive traditions
+2. Curriculum Integration: in subjects, special subjects, projects
+3. Regular Habits: morning handshakes, prayers, clean Friday
+4. Extracurricular Activities: scouts, Red Cross, social activities
+5. Collaboration with Parents: aligned values, regular communication
 
 7.5 RESEARCH ON CHARACTER EDUCATION
 
-Meta-analysis of 100+ studies (Berkowitz & Bier, 2005) shows that effective character education programs have the following characteristics:
-- Minimum duration of 1 year (not short-term programs)
-- Involves the entire school community
+Meta-analysis of 100+ studies (Berkowitz & Bier, 2005) shows effective programs have:
+- Minimum duration of 1 year
+- Involves entire school community
 - Combines values teaching with practice
-- Provides opportunities for moral discussion
-- Consistent across aspects (curriculum, culture, policy)
+- Opportunities for moral discussion
+- Consistency across aspects
 
-Average effect size of character education programs: d = 0.30 for prosocial behavior and reduction of problematic behavior.
+Average effect size: d = 0.30 for prosocial behavior.
 
 7.6 CHALLENGES IN CHARACTER EDUCATION
 
@@ -662,44 +456,22 @@ Average effect size of character education programs: d = 0.30 for prosocial beha
 TITLE: Child Moral and Social Development - Kohlberg's Theory and Its Influence
 AUTHORS: Lawrence Kohlberg, Carol Gilligan
 YEAR: 1958-1990
-KEYWORDS: moral development, Kohlberg, moral reasoning, gender
 
 8.1 KOHLBERG'S THEORY OF MORAL DEVELOPMENT
 
-Lawrence Kohlberg (1927-1987) developed a theory of moral development consisting of 3 levels and 6 stages. This theory was based on research using the "Heinz Dilemma" - a story about a husband who steals medicine to save his sick wife.
+Lawrence Kohlberg (1927-1987) developed a theory of moral development consisting of 3 levels and 6 stages.
 
-Level I: Pre-conventional Morality (ages 4-10)
-Focuses on physical consequences and self-interest
+Level I: Pre-conventional Morality (ages 4-10): Focuses on physical consequences and self-interest
+- Stage 1: Punishment and Obedience Orientation
+- Stage 2: Instrumental Hedonistic Orientation
 
-Stage 1: Punishment and Obedience Orientation
-- Right/wrong determined by punishment or not
-- "I shouldn't steal because I'll be punished"
+Level II: Conventional Morality (ages 10-15): Focuses on adherence to social rules
+- Stage 3: "Good Boy/Good Girl" / Interpersonal Orientation
+- Stage 4: Law and Order Orientation
 
-Stage 2: Instrumental Hedonistic Orientation
-- Actions considered right if they meet one's own needs
-- "I can steal if it saves my wife"
-
-Level II: Conventional Morality (ages 10-15)
-Focuses on adherence to social rules and others' expectations
-
-Stage 3: "Good Boy/Good Girl" / Interpersonal Orientation
-- Actions are good if approved by others
-- "A good person would steal to save his wife"
-
-Stage 4: Law and Order Orientation
-- Respecting authority and social rules
-- "Stealing breaks the law, Heinz should not steal"
-
-Level III: Post-conventional / Principled Morality (ages 16+)
-Focuses on universal moral principles
-
-Stage 5: Social Contract Orientation
-- Rules are social contracts that can be changed
-- "Stealing breaks the law but in this case it might be necessary"
-
-Stage 6: Universal Ethical Principles Orientation
-- Actions based on universal principles (justice, human rights)
-- "Human life is more valuable than property law"
+Level III: Post-conventional / Principled Morality (ages 16+): Focuses on universal moral principles
+- Stage 5: Social Contract Orientation
+- Stage 6: Universal Ethical Principles Orientation
 
 8.2 CRITICISM OF KOHLBERG'S THEORY
 
@@ -707,36 +479,30 @@ Carol Gilligan (1982) criticized Kohlberg because:
 - Theory was based only on male subjects
 - Ignores "care ethics" perspective
 - Women tend to be at lower stages due to different approaches
-- Gilligan proposed a theory of female moral development focused on relationships and responsibility
 
-Other criticisms:
-- Stage 6 is rarely achieved
-- Too focused on reasoning (not actual behavior)
-- Lacks consideration of cultural influences
+Other criticisms: Stage 6 is rarely achieved, too focused on reasoning, lacks cultural considerations.
 
 8.3 IMPLICATIONS FOR EDUCATION
 
-1. Moral Dilemma Discussions: students discuss moral dilemmas to stimulate moral reasoning development
-2. Just Community: schools as democratic communities where students help make rules
+1. Moral Dilemma Discussions: stimulate moral reasoning development
+2. Just Community: schools as democratic communities
 3. Role Play: acting out roles to understand others' perspectives
-4. Reflection: encouraging students to reflect on their values and actions
+4. Reflection: encouraging students to reflect on their values
 
 8.4 SOCIAL DEVELOPMENT
 
-In addition to moral development, children's social development is also important:
 - Erikson: 8 stages of psychosocial development
-- Piaget: development of social understanding (egocentrism → understanding rules)
+- Piaget: development of social understanding
 - Vygotsky: social interaction as the engine of development
 
 --- DOCUMENT 9 ---
 TITLE: Educational Technology - Evolution, Theory, and Practice
 AUTHORS: Robert Gagné, Richard Mayer, AECT
 YEAR: 1965-2023
-KEYWORDS: educational technology, learning media, blended learning, LMS
 
 9.1 DEFINITION AND EVOLUTION
 
-Educational technology is defined by the Association for Educational Communications and Technology (AECT) as "the study and ethical practice of facilitating learning and improving performance by creating, using, and managing appropriate technological processes and resources."
+Educational technology is defined by AECT as "the study and ethical practice of facilitating learning and improving performance by creating, using, and managing appropriate technological processes and resources."
 
 Evolution of educational technology:
 - 1960-70: Mainframe computers, programmed instruction
@@ -745,27 +511,13 @@ Evolution of educational technology:
 - 2010-2020: Mobile learning, MOOCs, AI
 - 2020+: Generative AI, VR/AR, adaptive learning
 
-9.2 FOUNDATIONAL THEORIES OF EDUCATIONAL TECHNOLOGY
+9.2 FOUNDATIONAL THEORIES
 
-A. Cognitive Load Theory (Sweller)
-Already explained in Document 2. Main principles for media design: reduce extraneous load, manage intrinsic load.
+A. Cognitive Load Theory (Sweller): Reduce extraneous load, manage intrinsic load
 
-B. Multimedia Learning (Mayer)
-Richard Mayer developed 12 multimedia learning principles:
-1. Multimedia Principle: words + pictures > words alone
-2. Contiguity Principle: text and images close together
-3. Modality Principle: audio narration > on-screen text
-4. Redundancy Principle: avoid duplicating text and audio
-5. Coherence Principle: remove irrelevant information
-6. Signaling Principle: cues/signals help attention
-7. Segmenting Principle: break material into parts
-8. Pre-training Principle: provide prior basic knowledge
-9. Personalization Principle: conversational style
-10. Voice Principle: human voice (not synthetic)
-11. Image Principle: speaker image doesn't always help
-12. Embodiment Principle: motion/gesture helps
+B. Multimedia Learning (Mayer): 12 principles including multimedia, contiguity, modality, redundancy, coherence, signaling, segmenting, pre-training, personalization, voice, image, embodiment
 
-C. Gagné's Nine Events of Instruction
+C. Gagné's Nine Events of Instruction:
 1. Gain attention
 2. Inform objectives
 3. Stimulate recall
@@ -778,39 +530,21 @@ C. Gagné's Nine Events of Instruction
 
 9.3 TYPES OF LEARNING MEDIA
 
-Visual Media:
-- Infographics, diagrams, graphs
-- Posters, pictures, photos
-- Animated videos, documentary videos
-
-Audio Media:
-- Podcasts, lecture recordings
-- Music, sound effects
-
-Interactive Digital Media:
-- Simulations, virtual labs
-- Educational games, gamification
-- Augmented Reality (AR), Virtual Reality (VR)
-
-Learning Platforms:
-- Learning Management Systems (LMS): Moodle, Canvas, Google Classroom
-- Massive Open Online Courses (MOOCs): Coursera, edX, Udemy
-- Social Learning: Edmodo, Google Workspace
+Visual Media: Infographics, diagrams, posters, videos
+Audio Media: Podcasts, recordings, music
+Interactive Digital Media: Simulations, games, AR, VR
+Learning Platforms: LMS (Moodle, Canvas), MOOCs (Coursera, edX), Social Learning (Edmodo)
 
 9.4 BLENDED LEARNING AND HYBRID LEARNING
 
-Blended Learning: combination of online and face-to-face learning. More effective than online alone or face-to-face alone (effect size 0.35).
+Blended Learning: combination of online and face-to-face. Effect size 0.35.
 
-Blended learning models:
-1. Station Rotation: students rotate between stations (online, face-to-face, group)
-2. Flipped Classroom: learn material at home (videos), practice in class
-3. Flex Model: online as the basis, with face-to-face support
-4. Enriched Virtual: mostly online, with scheduled face-to-face
+Models: Station Rotation, Flipped Classroom, Flex Model, Enriched Virtual
 
 9.5 CHALLENGES IN EDUCATIONAL TECHNOLOGY
 
-1. Access gap (digital divide): not all students have devices/internet
-2. Teacher digital literacy: not all teachers are ready
+1. Access gap (digital divide)
+2. Teacher digital literacy
 3. Data security and privacy
 4. Technology distraction
 5. Implementation costs
@@ -818,23 +552,22 @@ Blended learning models:
 
 9.6 FUTURE TRENDS
 
-- Adaptive learning: AI that adjusts material to student ability
-- Generative AI: ChatGPT, AI tutors for personalization
+- Adaptive learning: AI adjusting material to student ability
+- Generative AI: ChatGPT, AI tutors
 - Microlearning: small modules for flexible learning
-- Immersive learning: VR/AR for immersive learning experiences
-- Learning Analytics: data analysis for prediction and intervention
+- Immersive learning: VR/AR
+- Learning Analytics: data analysis for prediction
 
 --- DOCUMENT 10 ---
 TITLE: Learning Media - Development and Evaluation
 AUTHORS: Azhar Arsyad, Rudi Susilana
 YEAR: 2011-2021
-KEYWORDS: learning media, instructional design, ADDIE, evaluation
 
 10.1 DEFINITION AND FUNCTIONS OF MEDIA
 
-Learning media is anything used to convey messages and stimulate students' thoughts, feelings, attention, and interest so that learning occurs.
+Learning media is anything used to convey messages and stimulate students' thoughts, feelings, attention, and interest.
 
-Functions of learning media (Levie & Lentz, 1982):
+Functions (Levie & Lentz, 1982):
 1. Attention Function: attracting student attention
 2. Affective Function: arousing positive emotions
 3. Cognitive Function: helping concept understanding
@@ -842,73 +575,33 @@ Functions of learning media (Levie & Lentz, 1982):
 
 10.2 PRINCIPLES OF MEDIA SELECTION
 
-Criteria for media selection:
-1. Learning objectives to be achieved
-2. Student characteristics (age, learning style)
-3. Availability and cost
-4. Ease of use
-5. Suitability with material
-6. Context and learning environment
+Criteria: Learning objectives, student characteristics, availability and cost, ease of use, suitability with material, context and environment
 
 10.3 MEDIA DEVELOPMENT WITH THE ADDIE MODEL
 
-ADDIE is the most commonly used instructional design model for developing learning media.
-
-Analysis
-- Needs and objectives analysis
-- Student characteristics analysis
-- Environment and resource analysis
-
-Design
-- Determining specific learning objectives
-- Designing storyboard and prototype
-- Selecting format and platform
-
-Development
-- Producing media
-- Internal testing (expert review)
-- Limited testing
-
-Implementation
-- Using media in the classroom
-- Observing the learning process
-- Collecting initial data
-
-Evaluation
-- Formative evaluation (during process)
-- Summative evaluation (after implementation)
-- Revision and improvement
+Analysis: Needs, student characteristics, environment
+Design: Learning objectives, storyboard, format and platform
+Development: Producing media, expert review, limited testing
+Implementation: Using media in class, observation, collecting data
+Evaluation: Formative and summative evaluation, revision
 
 10.4 LEARNING MEDIA EVALUATION
 
-Media evaluation includes:
-1. Technical Aspects: audio/video quality, navigation, display
-2. Pedagogical Aspects: alignment with objectives and material
-3. Effectiveness Aspects: impact on learning outcomes
+Evaluation includes: Technical aspects, pedagogical aspects, effectiveness aspects
 
-Evaluation instruments:
-- Checklist for expert review
-- Student response questionnaires
-- Learning achievement tests
-- Learning process observation
+Instruments: Checklist for expert review, student questionnaires, achievement tests, observation
 
 10.5 LEARNING MEDIA IN THE DIGITAL ERA
 
-Popular digital media:
-1. Learning videos (YouTube, interactive videos)
-2. PowerPoint/interactive presentations
-3. Learning apps (Quizizz, Kahoot, Padlet)
-4. Virtual labs and simulations
-5. E-books and digital modules
+Popular digital media: Learning videos, presentations, learning apps (Quizizz, Kahoot), virtual labs, e-books
 
-Advantages of digital media: easy access, interactive, quick updates
+Advantages: easy access, interactive, quick updates
 Disadvantages: infrastructure, distraction, content validation
 
 --- DOCUMENT 11 ---
 TITLE: Learning Motivation - Theories and Strategies for Improvement
 AUTHORS: Abraham Maslow, Edward Deci, Richard Ryan, Carole Dweck
 YEAR: 1943-2020
-KEYWORDS: motivation, intrinsic, extrinsic, self-determination, mindset
 
 11.1 INTRODUCTION
 
@@ -929,34 +622,386 @@ Abraham Maslow (1943) proposed a hierarchy of 5 needs:
 4. Esteem: recognition, respect, status
 5. Self-Actualization: reaching full potential
 
-Principle: basic needs must be met before higher-level needs can be activated. Students who are hungry, afraid, or lonely will not be motivated to achieve.
+Principle: basic needs must be met before higher-level needs can be activated.
 
 11.3 SELF-DETERMINATION THEORY (DECI & RYAN)
 
-SDT identifies three basic psychological needs that must be met for intrinsic motivation:
-
-1. Autonomy
-   - Feeling of having control and choice
-   - Strategies: provide task choices, avoid excessive control
-
-2. Competence
-   - Feeling capable and effective
-   - Strategies: tasks at appropriate level, constructive feedback
-
-3. Relatedness
-   - Feeling connected and accepted by others
-   - Strategies: build positive relationships, collaboration
+SDT identifies three basic psychological needs for intrinsic motivation:
+1. Autonomy: feeling of having control and choice
+2. Competence: feeling capable and effective
+3. Relatedness: feeling connected and accepted by others
 
 When these three needs are met, intrinsic motivation naturally increases.
 
 11.4 EXPECTANCY-VALUE THEORY (ECCLES)
 
-The Eccles model states that motivation depends on two factors:
-1. Expectancy of Success: how confident the student is that they can succeed
-2. Task Value: how valuable the task is to the student
+Motivation depends on two factors:
+1. Expectancy of Success: confidence in success
+2. Task Value: how valuable the task is
 
-Task value consists of:
-- Attainment value: importance of task to self-identity
-- Intrinsic value: enjoyment of doing the task
-- Utility value: practical usefulness of the task
--
+Task value consists of: attainment value, intrinsic value, utility value, cost
+
+11.5 THEORY MINDSET (CAROL DWECK)
+
+Fixed Mindset: believes ability is innate and unchangeable
+Growth Mindset: believes ability can develop through effort
+
+Growth mindset interventions can improve motivation and achievement.
+
+11.6 THEORY OF ATTRIBUTION (WEINER)
+
+Students attribute success/failure to:
+- Internal vs External
+- Stable vs Unstable
+- Controllable vs Uncontrollable
+
+Adaptive attribution: attributing failure to lack of effort (internal, unstable, controllable)
+
+11.7 STRATEGIES TO INCREASE STUDENT MOTIVATION
+
+1. Create a safe and supportive learning environment
+2. Provide choice and autonomy in tasks
+3. Set specific, challenging, and achievable goals
+4. Provide constructive and specific feedback
+5. Build relevance: connect material to student life
+6. Use varied teaching methods
+7. Reward effort and progress
+8. Develop growth mindset with appropriate language
+9. Facilitate collaboration and social interaction
+10. Recognize and appreciate individual interests
+
+11.8 MOTIVATION RESEARCH
+
+Meta-analysis by Hattie (2009): correlation between motivation and achievement r = 0.34. Students with high intrinsic motivation are 2.5x more likely to persist in difficult tasks.
+
+--- DOCUMENT 12 ---
+TITLE: Instructional Strategies to Increase Motivation in the Classroom
+AUTHORS: Marzano, Ames, Brophy
+YEAR: 1990-2018
+
+12.1 GOAL ORIENTATION THEORY
+
+Two main goal orientations:
+1. Mastery Goals: focus on mastering material and competence
+2. Performance Goals: focus on demonstrating ability compared to others
+
+Mastery goals -> intrinsic motivation, deep strategies, long-term achievement
+Performance goals -> mixed results (can motivate but also anxiety)
+
+12.2 MOTIVATIONAL LEARNING STRATEGIES (MARZANO)
+
+1. Setting Goals and Feedback: specific goals, challenging but achievable, immediate and specific feedback
+2. Reinforcement and Rewards: contingent on performance
+3. Positive Learning Environment: good teacher-student relationships, supportive class norms
+4. Generating Interest: connections to student life, novelty and variety
+5. Increasing Self-Efficacy: success experiences, modeling and scaffolding
+
+12.3 LEARNING READINESS
+
+Influenced by: Cognitive (prior knowledge), Affective (motivation and interest), Psychomotor (basic skills)
+
+Principle: learning should start from the student's ZPD.
+
+12.4 THE TEACHER'S ROLE IN MOTIVATION
+
+1. Positive expectations: believes all students can learn
+2. Enthusiasm: passion in teaching is contagious
+3. Fairness: fair and consistent treatment
+4. Humor: relaxed and enjoyable atmosphere
+5. Personalization: knowing students individually
+
+12.5 PRACTICAL APPLICATIONS IN THE CLASSROOM
+
+1. "What's in it for me?" - explain relevance at the beginning
+2. Choice boards - task/project choices
+3. Peer tutoring - learning from peers
+4. Gamification - points, badges, leaderboards
+5. Real-world connections - industry visits, guest speakers
+
+--- DOCUMENT 13 ---
+TITLE: Learning Assessment - Principles and Practice
+AUTHORS: Paul Black, Dylan Wiliam, Grant Wiggins
+YEAR: 1998-2022
+
+13.1 THE ROLE OF ASSESSMENT IN LEARNING
+
+Assessment is a systematic process of collecting and interpreting information about student learning. Good assessment not only measures results but also guides the learning process.
+
+13.2 FORMATIVE ASSESSMENT
+
+Formative assessment is "assessment for learning" - used during the learning process to provide feedback and improve learning.
+
+Characteristics: Informal and continuous, not for final grade, focus on identifying gaps, actionable feedback, involves students (self/peer assessment)
+
+Examples: Short quizzes, oral questions, exit tickets, thumbs up/down, student portfolios, reflective journals
+
+13.3 SUMMATIVE ASSESSMENT
+
+Summative assessment is "assessment of learning" - used at the end of a period to evaluate learning achievement and give grades.
+
+Characteristics: Formal and structured, produces grades, at the end of unit/semester/year, measures final achievement
+
+Examples: Final exams, national exams, final projects, practical exams
+
+13.4 RUBRICS
+
+Rubrics are assessment guidelines that explain criteria and performance levels.
+
+Types: Holistic (overall score) vs Analytic (per criteria/dimension)
+
+Components: Criteria, Descriptors, Scale
+
+13.5 EFFECTIVE FEEDBACK
+
+Characteristics:
+1. Specific: shows what is good and what needs improvement
+2. Timely: given immediately after performance
+3. Focus on task, not person
+4. Follow-up: provides concrete suggestions for improvement
+5. Comparison with criteria, not with other students
+
+Feedback model: Feed-up (goals), Feed-back (current position), Feed-forward (next steps)
+
+13.6 PRINCIPLES OF GOOD ASSESSMENT
+
+1. Clear purpose
+2. Clear targets
+3. Sound design (valid and reliable)
+4. Effective communication
+5. Student involvement
+
+13.7 AUTHENTIC ASSESSMENT
+
+Assesses student ability in tasks that resemble the real world.
+
+Characteristics: Complex and challenging, requires application of knowledge, involves process and product, allows multiple solutions
+
+Examples: research projects, presentations, portfolios, simulations, practical work
+
+13.8 RESEARCH ON FORMATIVE ASSESSMENT
+
+Black & Wiliam (1998): formative assessment effectively improves achievement, effect size d = 0.4-0.7. Equivalent to 2 years of additional progress.
+
+--- DOCUMENT 14 ---
+TITLE: Authentic Assessment and Portfolios in Education
+AUTHORS: Grant Wiggins, Jay McTighe, Linda Darling-Hammond
+YEAR: 1990-2020
+
+14.1 AUTHENTIC ASSESSMENT
+
+Authentic assessment assesses student ability in meaningful and realistic contexts.
+
+Principles: Requires real performance, real-world context, requires application (not memorization), clear criteria, students given opportunity to show their best
+
+14.2 PORTFOLIO
+
+Portfolio is a collection of student work that shows effort, progress, and achievement over time.
+
+Types:
+1. Showcase Portfolio: only best works
+2. Growth Portfolio: shows progress over time
+3. Process Portfolio: documentation including drafts and revisions
+4. Evaluation Portfolio: for summative assessment
+
+Components: Student work, student reflection, rubric/criteria, teacher feedback
+
+Advantages: Shows development, students active in process, develops reflection skills, more comprehensive assessment
+
+Challenges: Time and workload, consistency of assessment, managing physical portfolios
+
+14.3 PERFORMANCE-BASED ASSESSMENT
+
+Students demonstrate skills through real performance: Presentations, debates, practical demonstrations, simulations, lab work
+
+14.4 IMPLEMENTATION IN THE CLASSROOM
+
+1. Determine learning objectives
+2. Design authentic tasks
+3. Develop rubrics
+4. Provide clear instructions to students
+5. Collect evidence (work, observation)
+6. Evaluate and provide feedback
+7. Reflection with students
+
+--- DOCUMENT 15 ---
+TITLE: Basic Statistics and Data Analysis for Educational Research
+AUTHORS: Andy Field, J.C. Nunnally
+YEAR: 2013-2022
+
+15.1 DESCRIPTIVE STATISTICS
+
+Used to describe and summarize data.
+
+Measures of Central Tendency:
+- Mean (μ): average = Σx/n
+- Median: middle value after sorting
+- Mode: most frequent value
+
+Measures of Dispersion:
+- Range: max - min
+- Variance (σ²): average squared deviation from mean
+- Standard deviation (σ): square root of variance
+- Interquartile range (IQR): Q3 - Q1
+
+Data Visualization: Histogram, Box plot, Scatter plot, Bar chart
+
+15.2 INFERENTIAL STATISTICS
+
+Used to generalize from sample to population and test hypotheses.
+
+Basic Concepts: Population vs Sample, Parameter vs Statistic, Null (H₀) and Alternative (H₁) hypotheses, Significance level (α = 0.05), p-value
+
+Parametric Tests:
+1. T-test: One-sample, Independent, Paired
+2. ANOVA: One-way, Two-way, Repeated-measures
+3. Pearson Correlation (r): 0.1-0.3 weak, 0.3-0.5 moderate, 0.5+ strong
+4. Linear Regression: Simple (Y = a + bX), Multiple (Y = a + b₁X₁ + b₂X₂ + ...)
+
+Non-parametric Tests: Mann-Whitney U, Wilcoxon, Kruskal-Wallis, Chi-Square
+
+15.3 EFFECT SIZE
+
+Measures the magnitude of impact, independent of sample size.
+
+Types:
+1. Cohen's d: d = 0.2 (small), 0.5 (medium), 0.8 (large)
+2. Eta-squared (η²): 0.01 (small), 0.06 (medium), 0.14 (large)
+3. Correlation r: 0.1 (small), 0.3 (medium), 0.5 (large)
+
+Interpretation: effect size is more important than p-value for practical significance.
+
+15.4 ASSUMPTION TESTS
+
+For parametric tests: Normality (Kolmogorov-Smirnov, Shapiro-Wilk), Homogeneity of variance (Levene's test), Linearity, Independence
+
+15.5 ADVANCED ANALYSIS TECHNIQUES
+
+1. ANCOVA: ANOVA + covariate
+2. MANOVA: multiple dependent variables
+3. Logistic Regression: categorical outcome
+4. Factor Analysis: dimension reduction
+5. Structural Equation Modeling (SEM): complex models
+
+15.6 STATISTICAL SOFTWARE
+
+Popular software: SPSS, R, JASP, JAMOVI, Python (pandas, scipy, statsmodels)
+
+15.7 INTERPRETING STATISTICAL RESULTS
+
+1. Are assumptions met?
+2. What is the test statistic (t, F, χ²) and p-value?
+3. Is it significant? (p < α)
+4. What is the effect size?
+5. Interpret in research context
+
+--- DOCUMENT 16 ---
+TITLE: Academic Writing - A Practical Guide
+AUTHORS: APA, MLA, general writing guidelines
+YEAR: 2020-2023
+
+16.1 STRUCTURE OF ACADEMIC WRITING
+
+General structure (IMRAD):
+1. Introduction: background, problem, objectives
+2. Method: design, subjects, instruments, procedures
+3. Results: findings/data
+4. Discussion: interpretation and implications
+
+Additional: Abstract, Literature Review, Conclusion
+
+16.2 PROPOSAL STRUCTURE
+
+Chapter I: Introduction (background, problem, objectives, benefits)
+Chapter II: Literature Review (theories, relevant research, framework, hypotheses)
+Chapter III: Methodology (design, location, population/sample, instruments, data analysis)
+References
+
+16.3 APA 7 FORMAT
+
+Basic rules: Font Times New Roman 12 pt or Calibri 11 pt, Double spacing, 1 inch margins
+Citation: (Author, Year) or Author (Year)
+References: Author, A. (Year). Title. Publisher.
+
+16.4 PLAGIARISM AND WRITING ETHICS
+
+Types: Copy-paste, Paraphrasing without citation, Self-plagiarism
+Prevention: Always cite sources, use plagiarism checking software (Turnitin, Grammarly), master citation techniques
+
+16.5 TIPS FOR ACADEMIC WRITING
+
+1. Start with an outline
+2. Write a draft (not perfect yet)
+3. Revise and edit (repeated process)
+4. Use clear, concise, objective language
+5. Avoid colloquial language
+6. Use active voice (clearer)
+7. Maintain consistent terminology
+8. Ask for feedback from others
+
+--- DOCUMENT 17 ---
+TITLE: Comparison of Quantitative and Qualitative Methodology
+AUTHORS: Creswell, Denzin & Lincoln
+YEAR: 2010-2022
+
+17.1 EPISTEMOLOGICAL COMPARISON
+
+Quantitative Research:
+- Positivist/realist: objective reality, measurable
+- Researcher separate from subjects
+- Generalization and prediction
+- Deductive (theory -> data)
+
+Qualitative Research:
+- Interpretive/constructivist: reality socially constructed
+- Researcher involved and interactive
+- Deep understanding
+- Inductive (data -> theory)
+
+17.2 METHODOLOGICAL COMPARISON
+
+| Aspect | Quantitative | Qualitative |
+|--------|--------------|-------------|
+| Questions | How many? Relationships? | How? Why? |
+| Sample | Large, representative | Small, purposive |
+| Instruments | Tests, questionnaires | Interviews, observation |
+| Data | Numeric | Text, images, audio |
+| Analysis | Statistical | Thematic, narrative |
+| Purpose | Generalization | Contextual understanding |
+
+17.3 MIXED METHODS RESEARCH
+
+Combines quantitative and qualitative approaches.
+
+Designs:
+1. Convergent: both quantitative and qualitative, collected simultaneously, compared
+2. Explanatory sequential: quantitative first, qualitative explains results
+3. Exploratory sequential: qualitative first, quantitative tests findings
+
+17.4 RESEARCH QUALITY CRITERIA
+
+Quantitative: Internal validity, External validity, Reliability
+Qualitative: Credibility, Transferability, Dependability, Confirmability
+
+17.5 WHEN TO USE?
+
+Choose Quantitative if:
+- Want to test hypotheses
+- Variables can be measured
+- Large sample available
+- Want generalization
+
+Choose Qualitative if:
+- Want to understand experience/meaning
+- Phenomenon is not well understood
+- Context is important
+- Want rich data
+
+Choose Mixed Methods if:
+- Single approach is not enough
+- Want triangulation
+- Phenomenon complexity requires both approaches
+
+================================================================================
+END OF DATASET
+Total: 17 documents
+================================================================================

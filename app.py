@@ -8,19 +8,16 @@ st.set_page_config(
     layout="centered"
 )
 
-# ── Custom CSS ───────────────────────────────────────────────────────────────
+# Style
 st.markdown("""
 <style>
-    .chip-container { display: flex; flex-wrap: wrap; gap: 8px; margin: 0.5rem 0 1rem 0; }
-    .chip {
-        background: #EEF1FE; color: #4A6CF7;
-        border: 1px solid #C7D2FE; border-radius: 20px;
-        padding: 4px 12px; font-size: 0.82rem;
-    }
-    .sidebar-footer {
-        text-align: center; font-size: 0.75rem;
-        color: #9CA3AF; margin-top: 1rem;
-    }
+section[data-testid="stSidebar"] * { color: #e2e0f8 !important; }
+h1 { color: #c4b5fd !important; }
+.stButton > button {
+    background: rgba(83,74,183,0.15) !important; color: #c4b5fd !important;
+    border: 1px solid rgba(83,74,183,0.4) !important; border-radius: 12px !important;
+    transition: all 0.2s !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -38,7 +35,7 @@ if "pipeline_loaded" not in st.session_state:
         st.write("📂 Reading research repository...")
         st.write("🔍 Building vector store...")
         st.write("🤖 Initializing LLM...")
-        chain, num_chunks = load_pipeline()
+        chain, num_chunks, documents = load_pipeline()
         st.session_state.chain = chain
         st.session_state.num_chunks = num_chunks
         st.session_state.pipeline_loaded = True
@@ -53,21 +50,26 @@ chain = st.session_state.chain
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# ── Example Questions (only when no chat yet) ──────────────────────────────
+# ── Example Questions ──────────────────────────────────────────────────────
+if "example_question" not in st.session_state:
+    st.session_state.example_question = None
+    
 if not st.session_state.messages:
-    st.info("💡 **Try asking:**")
-    st.markdown("""
-    <div class="chip-container">
-        <span class="chip">📖 What is constructivism?</span>
-        <span class="chip">🔬 Difference between quantitative & qualitative research</span>
-        <span class="chip">🧠 Motivation theories in education</span>
-        <span class="chip">📋 How to conduct Classroom Action Research</span>
-        <span class="chip">💻 Multimedia learning principles</span>
-        <span class="chip">⭐ How to apply behaviorism in the classroom?</span>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("### Suggested Questions")
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("Constructivism", use_container_width=True):
+            st.session_state.example_question = "What is constructivism?"
+        if st.button("Motivation", use_container_width=True):
+            st.session_state.example_question = "What are the theories of motivation in education?"
+        if st.button("Classroom Action Research", use_container_width=True):
+            st.session_state.example_question = "How to conduct Classroom Action Research?"
 
-    st.markdown("")  # spacing
+    with col2:
+        if st.button("Quantitative vs Qualitative", use_container_width=True):
+            st.session_state.example_question = "Difference between quantitative and qualitative research"
+        if st.button("Multimedia Learning", use_container_width=True):
+            st.session_state.example_question = "What are multimedia learning principles?"
 
 # ── Display Chat History ───────────────────────────────────────────────────
 for message in st.session_state.messages:
@@ -75,80 +77,106 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # ── User Input ──────────────────────────────────────────────────────────────
-if user_input := st.chat_input("Ask about educational theory or research methodology..."):
-    st.session_state.messages.append({"role": "user", "content": user_input})
+user_input = st.chat_input(
+    "Ask about educational theory or research methodology..."
+)
+# If user use example question
+if st.session_state.example_question:
+    user_input = st.session_state.example_question
+    st.session_state.example_question = None
+
+if user_input:
+    # Initialize variables outside try block
+    answer = ""
+    source_docs = []
+    
+    st.session_state.messages.append({
+        "role": "user",
+        "content": user_input
+    })
     with st.chat_message("user"):
         st.markdown(user_input)
-
     with st.chat_message("assistant"):
         with st.spinner("🔍 Searching repository..."):
-            result = chain.invoke({"query": user_input})
-            answer = result["result"]
-            source_docs = result["source_documents"]
+            try:
+                result = chain.invoke({"query": user_input})
+                answer = result["result"]
+                source_docs = result["source_documents"]
+            except Exception as e:
+                answer = "⚠️ Sorry, an error occurred while processing your question."
+                source_docs = []
+                st.error(str(e))
 
         st.markdown(answer)
-
+        
+        # ── VIEW SOURCES ──
         with st.expander("📚 View Sources"):
-            for i, doc in enumerate(source_docs, 1):
-                st.markdown(f"**Source {i}:**")
-                st.text(doc.page_content[:300] + "...")
-                if i < len(source_docs):
-                    st.divider()
-
-    st.session_state.messages.append({"role": "assistant", "content": answer})
-
+            # Filter dan hapus duplikat
+            seen = set()
+            unique_docs = []
+            for doc in source_docs:
+                title = doc.metadata.get('title', 'Unknown')
+                # Hanya tampilkan jika judul tidak "Unknown" dan konten ada
+                if title != 'Unknown' and title not in seen and len(doc.page_content) > 50:
+                    seen.add(title)
+                    unique_docs.append(doc)
+            
+            if unique_docs:
+                st.write(f"**{len(unique_docs)} sources found:**")
+                
+                for i, doc in enumerate(unique_docs, 1):
+                    title = doc.metadata.get('title', 'Unknown')
+                    author = doc.metadata.get('author', 'Unknown')
+                    year = doc.metadata.get('year', 'Unknown')
+                    
+                    # Tampilkan per source
+                    with st.container(border=True):
+                        st.markdown(f"**📘 {i}. {title}**")
+                        st.caption(f"Author: {author} | Year: {year}")
+                        st.text(doc.page_content[:400] + "..." if len(doc.page_content) > 400 else doc.page_content)
+            else:
+                st.info("No relevant sources found for this question.")
+        
+        # Append to messages AFTER all processing is complete
+        st.session_state.messages.append({"role": "assistant", "content": answer})
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("### 📋 About EduScholar")
-    st.markdown(
-        "This application uses **RAG** *(Retrieval-Augmented Generation)* "
-        "technology to answer questions based on the education research repository.\n\n"
-        "> Answers are based **only** on repository documents, not general AI knowledge."
-    )
+    with st.container(border=True):
+        st.markdown("### 🎓 EduScholar")
+        st.caption(
+            "Your AI companion for educational research."
+        )
+        st.markdown("""
+**Explore** learning theories
 
-    st.divider()
+**Summarize** research literature
 
-    st.markdown("### 📚 Topics in Catalog")
-    st.markdown("""
-| Category | Topics |
-|---|---|
-| Learning Theory | Constructivism, Cognitivism, Behaviorism |
-| Methodology | Quantitative, Qualitative |
-| Psychology | Learning Motivation, Character Education |
-| Evaluation | Assessment, Educational Technology |
+**Answer** using repository-based evidence
 """)
 
     st.divider()
 
-    st.markdown("### ⚙️ System Architecture")
-    st.markdown(
-        "```\n"
-        "Research Catalog (TXT)\n"
-        "       ↓\n"
-        "  Document Loader\n"
-        "       ↓\n"
-        "  Text Splitter\n"
-        "       ↓\n"
-        "HuggingFace Embeddings\n"
-        "       ↓\n"
-        "  FAISS Vector Store\n"
-        "       ↓\n"
-        "    Retriever\n"
-        "       ↓\n"
-        " LLM (Gemini / Groq)\n"
-        "       ↓\n"
-        "  Final Answer\n"
-        "```"
-    )
+    st.markdown("### 📚 Topics")
+    st.markdown("""
+- Constructivism, Cognitivism, Behaviorism
+- Quantitative & Qualitative Research
+- Learning Motivation
+- Character Education
+- Assessment & Educational Technology
+""")
 
     st.divider()
 
-    if st.button("🔄 Reset Conversation", use_container_width=True):
+    if st.button("🔄 Reset Chat", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
 
-    st.markdown(
-        "<div class='sidebar-footer'>EduScholar · Powered by RAG + LLM</div>",
-        unsafe_allow_html=True
-    )
+    st.divider()
+
+    st.markdown("###  Powered by")
+    st.markdown("""
+- LangChain
+- FAISS
+- Groq
+""")
