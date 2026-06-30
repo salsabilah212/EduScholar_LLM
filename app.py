@@ -89,6 +89,7 @@ if user_input:
     # Initialize variables outside try block
     answer = ""
     source_docs = []
+    sources_were_used = False
     
     st.session_state.messages.append({
         "role": "user",
@@ -100,8 +101,24 @@ if user_input:
         with st.spinner("🔍 Searching repository..."):
             try:
                 result = chain.invoke({"query": user_input})
-                answer = result["result"]
+                raw_answer = result["result"]
                 source_docs = result["source_documents"]
+                cleaned = raw_answer.strip()
+                if cleaned.endswith("[SOURCES_USED]"):
+                    sources_were_used = True
+                    answer = cleaned[: -len("[SOURCES_USED]")].strip()
+                elif cleaned.endswith("[NO_SOURCES]"):
+                    sources_were_used = False
+                    answer = cleaned[: -len("[NO_SOURCES]")].strip()
+                else:
+                    answer = cleaned
+                    clarification_signals = [
+                        "specify which", "please clarify", "which topic",
+                        "could you clarify", "not available in the provided documents",
+                        "i am an academic research assistant",  # model_extraction_guard reply
+                    ]
+                    lower_answer = answer.lower()
+                    sources_were_used = not any(sig in lower_answer for sig in clarification_signals)
             except Exception as e:
                 answer = "⚠️ Sorry, an error occurred while processing your question."
                 source_docs = []
