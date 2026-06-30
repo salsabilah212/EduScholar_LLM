@@ -101,24 +101,8 @@ if user_input:
         with st.spinner("🔍 Searching repository..."):
             try:
                 result = chain.invoke({"query": user_input})
-                raw_answer = result["result"]
+                answer = result["result"]
                 source_docs = result["source_documents"]
-                cleaned = raw_answer.strip()
-                if cleaned.endswith("[SOURCES_USED]"):
-                    sources_were_used = True
-                    answer = cleaned[: -len("[SOURCES_USED]")].strip()
-                elif cleaned.endswith("[NO_SOURCES]"):
-                    sources_were_used = False
-                    answer = cleaned[: -len("[NO_SOURCES]")].strip()
-                else:
-                    answer = cleaned
-                    clarification_signals = [
-                        "specify which", "please clarify", "which topic",
-                        "could you clarify", "not available in the provided documents",
-                        "i am an academic research assistant",  # model_extraction_guard reply
-                    ]
-                    lower_answer = answer.lower()
-                    sources_were_used = not any(sig in lower_answer for sig in clarification_signals)
             except Exception as e:
                 answer = "⚠️ Sorry, an error occurred while processing your question."
                 source_docs = []
@@ -133,7 +117,6 @@ if user_input:
             unique_docs = []
             for doc in source_docs:
                 title = doc.metadata.get('title', 'Unknown')
-                # Hanya tampilkan jika judul tidak "Unknown" dan konten ada
                 if title != 'Unknown' and title not in seen and len(doc.page_content) > 50:
                     seen.add(title)
                     unique_docs.append(doc)
@@ -154,7 +137,6 @@ if user_input:
             else:
                 st.info("No relevant sources found for this question.")
         
-        # Append to messages AFTER all processing is complete
         st.session_state.messages.append({"role": "assistant", "content": answer})
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
